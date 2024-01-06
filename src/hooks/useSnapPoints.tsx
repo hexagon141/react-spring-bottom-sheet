@@ -197,18 +197,18 @@ function useElementSizeObserver(
     [resizeSourceRef]
   )
 
-  useLayoutEffect(() => {
-    if (!ref.current || !enabled) {
-      return
-    }
-
-    const resizeObserver = new ResizeObserver(handleResize)
-    resizeObserver.observe(ref.current, observerOptions)
-
-    return () => {
-      resizeObserver.disconnect()
-    }
-  }, [ref, handleResize, enabled])
+  // useLayoutEffect(() => {
+  //   if (!ref.current || !enabled) {
+  //     return
+  //   }
+  //
+  //   const resizeObserver = new ResizeObserver(handleResize)
+  //   resizeObserver.observe(ref.current, observerOptions)
+  //
+  //   return () => {
+  //     resizeObserver.disconnect()
+  //   }
+  // }, [ref, handleResize, enabled])
 
   return enabled ? size : 0
 }

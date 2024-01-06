@@ -1,5 +1,5 @@
 {
-  "name": "react-spring-bottom-sheet",
+  "name": "fast-react-spring-bottom-sheet",
   "description": "✨ Accessible, 🪄 Delightful, and 🤯 Performant. Built on react-spring for the web, and react-use-gesture.",
   "license": "MIT",
   "author": "Cody Olsen",
@@ -35,6 +35,7 @@
   "dependencies": {
     "@juggle/resize-observer": "^3.2.0",
     "@reach/portal": "^0.13.0",
+    "@use-gesture/react": "^10.3.0",
     "@xstate/react": "^1.2.0",
     "body-scroll-lock": "^3.1.5",
     "focus-trap": "^6.2.2",
